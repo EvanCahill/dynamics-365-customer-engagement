@@ -55,20 +55,20 @@ When configuring ribbon elements, you can define specific rules to control when 
 
 - Outlook  
 
-  `<CrmOfflineAccessStateRule>`  
-  Use this criteria to display a ribbon element based on whether [!INCLUDE[pn_crm_outlook_offline_access](../../includes/pn-crm-outlook-offline-access.md)] is currently offline.  
+ `<CrmOfflineAccessStateRule>`  
+ Use this criteria to display a ribbon element based on whether [!INCLUDE[pn_crm_outlook_offline_access](../../includes/pn-crm-outlook-offline-access.md)] is currently offline.  
 
-  `<CrmOutlookClientTypeRule>`  
-  Use this rule if you want to display a button for the specific type of [!INCLUDE[pn_crm_for_outlook_full](../../includes/pn-crm-for-outlook-full.md)]. `Type` options are as follows:  
+ `<CrmOutlookClientTypeRule>`  
+Use this rule if you want to display a button for the specific type of [!INCLUDE[pn_crm_for_outlook_full](../../includes/pn-crm-for-outlook-full.md)]. `Type` options are as follows:  
 
 - CrmForOutlook  
 
 - CrmForOutlookOfflineAccess  
 
-  `<CrmOutlookClientVersionRule>`  
-  [!INCLUDE[ribbon_element_CrmOutlookClientVersionRule](../../includes/ribbon-element-crmoutlookclientversionrule.md)]
+ `<CrmOutlookClientVersionRule>`  
+ [!INCLUDE[ribbon_element_CrmOutlookClientVersionRule](../../includes/ribbon-element-crmoutlookclientversionrule.md)]
 
-  Valid values:  
+ Valid values:  
 
 - 2003  
 
@@ -76,11 +76,11 @@ When configuring ribbon elements, you can define specific rules to control when 
 
 - 2010  
 
-  `<EntityPrivilegeRule>`  
-  Use this kind of rule to display ribbon elements when a user has specific privileges for an entity. You must specify the privilege depth and the specific privilege you want to check.  
+ `<EntityPrivilegeRule>`  
+ Use this kind of rule to display ribbon elements when a user has specific privileges for an entity. You must specify the privilege depth and the specific privilege you want to check.  
 
-  `<EntityPropertyRule>`  
-  Allows definition of rules depending on the Boolean values of specific entity properties. `PropertyName` options are as follows:  
+ `<EntityPropertyRule>`  
+ Allows definition of rules depending on the Boolean values of specific entity properties. `PropertyName` options are as follows:  
 
 - DuplicateDetectionEnabled  
 
@@ -100,16 +100,16 @@ When configuring ribbon elements, you can define specific rules to control when 
 
 - HasNotes  
 
-  `<EntityRule>`  
-  Entity rules allow for evaluation of the current entity. This is useful when you define custom actions that apply to the entity template instead of for specific entities. For example, you may want to add a ribbon element to all entities except for some specific entities. It is easier to define the custom action for the entity template that applies to all entities and then use an entity rule to filter out those that should be excluded.  
+ `<EntityRule>`  
+ Entity rules allow for evaluation of the current entity. This is useful when you define custom actions that apply to the entity template instead of for specific entities. For example, you may want to add a ribbon element to all entities except for some specific entities. It is easier to define the custom action for the entity template that applies to all entities and then use an entity rule to filter out those that should be excluded.  
 
-  The entity rule also includes an optional context attribute to specify whether the entity is being displayed in the form or a list (HomePageGrid). The optional `AppliesTo` attribute can be set to `PrimaryEntity` or `SelectedEntity` to distinguish whether the entity is being displayed in a subgrid.  
+ The entity rule also includes an optional context attribute to specify whether the entity is being displayed in the form or a list (HomePageGrid). The optional `AppliesTo` attribute can be set to `PrimaryEntity` or `SelectedEntity` to distinguish whether the entity is being displayed in a subgrid.  
 
-  `<FormEntityContextRule>`  
-  [!INCLUDE[ribbon_element_FormEntityContextRule](../../includes/ribbon-element-formentitycontextrule.md)]
+ `<FormEntityContextRule>`  
+ [!INCLUDE[ribbon_element_FormEntityContextRule](../../includes/ribbon-element-formentitycontextrule.md)]
 
-  `<FormStateRule`  
-  Use the form state rule to determine the current type of form that is displaying a record. `State` options are as follows:  
+ `<FormStateRule`  
+ Use the form state rule to determine the current type of form that is displaying a record. `State` options are as follows:  
 
 - Create  
 
@@ -121,10 +121,10 @@ When configuring ribbon elements, you can define specific rules to control when 
 
 - BulkEdit  
 
-  `<FormTypeRule>`  
-  [!INCLUDE[ribbon_element_FormTypeRule](../../includes/ribbon-element-formtyperule.md)]
+ `<FormTypeRule>`  
+ [!INCLUDE[ribbon_element_FormTypeRule](../../includes/ribbon-element-formtyperule.md)]
 
-  The `Type` values correspond to the following:  
+ The `Type` values correspond to the following:  
 
 |Value|Presentation|  
 |-----------|------------------|  
@@ -150,18 +150,18 @@ When configuring ribbon elements, you can define specific rules to control when 
 
 - IsFiscalCalendarDefined  
 
-  `<OrRule>` 
-  This rule lets you override the default AND comparison for multiple display rule types. Use the `OrRule` element to define several possible valid combinations to check.  
+ `<OrRule>` 
+ This rule lets you override the default AND comparison for multiple display rule types. Use the `OrRule` element to define several possible valid combinations to check.  
 
-  `<OutlookRenderTypeRule>`  
-  Use this to display a ribbon element if the ribbon is being displayed in [!INCLUDE[pn_MS_Outlook_Short](../../includes/pn-ms-outlook-short.md)] in a specific way. `Type` options are as follows:  
+ `<OutlookRenderTypeRule>`  
+ Use this to display a ribbon element if the ribbon is being displayed in [!INCLUDE[pn_MS_Outlook_Short](../../includes/pn-ms-outlook-short.md)] in a specific way. `Type` options are as follows:  
 
 - Web  
 
 - Outlook  
 
-  `<OutlookVersionRule>`  
-  Use this to display a ribbon element for a specific version of [!INCLUDE[pn_MS_Outlook_Short](../../includes/pn-ms-outlook-short.md)]. `Version` options are as follows:  
+ `<OutlookVersionRule>`  
+ Use this to display a ribbon element for a specific version of [!INCLUDE[pn_MS_Outlook_Short](../../includes/pn-ms-outlook-short.md)]. `Version` options are as follows:  
 
 - 2003  
 
@@ -169,11 +169,11 @@ When configuring ribbon elements, you can define specific rules to control when 
 
 - 2010  
 
-  `<PageRule>`  
-  This type of rule checks the URL of the page being displayed. It returns true if the address matches.  
+ `<PageRule>`  
+ This type of rule checks the URL of the page being displayed. It returns true if the address matches.  
 
-  `<RelationshipTypeRule>` 
-  This type of rule is applied to records selected in a grid. It lets you determine the type of relationship, as follows:  
+ `<RelationshipTypeRule>`  
+ This type of rule is applied to records selected in a grid. It lets you determine the type of relationship, as follows:  
 
 - OneToMany  
 
@@ -181,8 +181,8 @@ When configuring ribbon elements, you can define specific rules to control when 
 
 - NoRelationship  
 
-  `<SkuRule>`  
-  Use this kind of rule to display a ribbon element for a specific SKU version of [!INCLUDE[pn_dynamics_crm](../../includes/pn-dynamics-crm.md)], as follows:  
+ `<SkuRule>`  
+ Use this kind of rule to display a ribbon element for a specific SKU version of [!INCLUDE[pn_dynamics_crm](../../includes/pn-dynamics-crm.md)], as follows:  
 
 - OnPremise  
 
@@ -190,8 +190,8 @@ When configuring ribbon elements, you can define specific rules to control when 
 
 - Spla  
 
-  `<ValueRule>`  
-  Use this rule to check the value of a specific field in the record being displayed in the form.  
+ `<ValueRule>`  
+ Use this rule to check the value of a specific field in the record being displayed in the form.  
 
 > [!NOTE]
 >  For commands defined for subgrid for forms using the updated user experience, value rules cannot be used within display rules. Use this element within an `<EnableRule>` to hide an element.  
